@@ -1,0 +1,65 @@
+html {
+    font-family: 'Merriweather', serif;
+}
+
+button {
+    border-radius: 5px;
+}
+
+.container {}
+
+#scoreboard {
+
+    width: 80%;
+    padding: 1em 3%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 2%;
+    row-gap: 2%;
+    margin: 0 auto;
+
+}
+
+.playercard {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(49, 52, 49);
+    color: white;
+}
+
+
+
+#restartButton {
+    margin-top: 2em;
+    padding: .5em;
+}
+
+.gameOverText {
+    background-color: green;
+    text-align: center;
+}
+
+.isWinning {
+    background-color: green;
+}
+
+h3 {
+    text-align: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
+.column {}
