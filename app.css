@@ -108,7 +108,7 @@ form {
 
 .gameOverText {
     display: block;
-    background-color: green;
+    background: linear-gradient(45deg, #54b770, #2c970e);
     text-align: center;
 }
 
