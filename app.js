@@ -179,7 +179,6 @@ class Player {
                 thisPlayer.strength++
                 thisPlayer.strengthSpan.textContent = thisPlayer.strength;
                 console.log(thisPlayer);
-                updateScore(players);
             }
         })
         this.strengthMinusButton.addEventListener('click', function () {
@@ -187,7 +186,6 @@ class Player {
                 thisPlayer.strength--
                 thisPlayer.strengthSpan.textContent = thisPlayer.strength;
                 console.log(thisPlayer);
-                updateScore(players);
             }
         })
         this.levelPlusButton.addEventListener('click', function () {
