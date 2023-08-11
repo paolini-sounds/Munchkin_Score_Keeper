@@ -2,17 +2,37 @@ html {
     font-family: 'Merriweather', serif;
 }
 
+body {
+    height: 100vh;
+    padding-top: 5%;
+}
+
 button {
     border-radius: 5px;
 }
 
-.container {}
+#nameinput {
+
+    border-radius: 3px
+}
+
+.container {
+    margin-top: ;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
 
 #scoreboard {
 
     width: 80%;
     padding: 1em 3%;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -30,6 +50,33 @@ button {
     color: white;
 }
 
+.main-header {
+    display: flex;
+    justify-content: center;
+}
+
+.main-header img {
+    width: 100px;
+}
+
+.nameHeader {
+    font-weight: 100;
+}
+
+@media (max-width: 800px) {
+    #scoreboard {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0;
+        padding: 0 0;
+    }
+
+    .playercard {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
 
 
 #restartButton {
@@ -49,6 +96,8 @@ button {
 h3 {
     text-align: center;
 }
+
+
 
 .column {
     display: flex;

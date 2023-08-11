@@ -7,7 +7,7 @@ const players = [];
 let gameOver = false;
 let theWinner = players[0];
 const header = document.querySelector('header');
-const restartButton = document.querySelector('#restartButton')
+//const restartButton = document.querySelector('#restartButton')
 
 
 
@@ -24,7 +24,7 @@ function showGameOver() {
 
 submitButton.addEventListener('click', function (e) {
     e.preventDefault();
-    if (players.length < 6) {
+    if (players.length < 6 && form.elements.playername.value) {
         new Player(form.elements.playername.value);
         players[players.length - 1].CreatePlayerCard();
         form.elements.playername.value = '';
@@ -32,10 +32,10 @@ submitButton.addEventListener('click', function (e) {
     }
 })
 
-restartButton.addEventListener('click', function () {
-    location.reload();
-    gameOver = false;
-})
+// restartButton.addEventListener('click', function () {
+//     location.reload();
+//     gameOver = false;
+// })
 
 function updateScore(arr) {
     let winningPlayer = arr[0];
@@ -110,6 +110,7 @@ class Player {
 
         this.playerNameHeader.textContent = this.name;
         this.playerCard.appendChild(this.playerNameHeader);
+        this.playerNameHeader.classList.add("nameHeader")
 
 
         this.columnsDiv.classList.add('columns');
