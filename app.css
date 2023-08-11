@@ -120,6 +120,15 @@ h3 {
     text-align: center;
 }
 
+.scorebutton {
+    font-size: .8rem;
+    padding: none;
+    height: 3em;
+    width: 3em;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
 
 
 .column {
