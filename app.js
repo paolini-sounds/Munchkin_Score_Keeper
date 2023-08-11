@@ -6,7 +6,7 @@ const scoreBoard = document.querySelector('#scoreboard')
 const players = [];
 let gameOver = false;
 let theWinner = players[0];
-const header = document.querySelector('header');
+// const header = document.querySelector('header');
 //const restartButton = document.querySelector('#restartButton')
 
 
@@ -15,7 +15,7 @@ function showGameOver() {
     const gameOverText = document.createElement('h2')
     gameOverText.innerHTML = `${theWinner.name} IS THE WINNER`
     gameOverText.classList.add('gameOverText')
-    header.append(gameOverText)
+    form.append(gameOverText)
 
 }
 
